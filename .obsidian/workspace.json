@@ -1,0 +1,299 @@
+{
+  "main": {
+    "id": "e92105dc27ffa0c9",
+    "type": "split",
+    "children": [
+      {
+        "id": "f3304a6f53e19dcc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5779d222c972df5b",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "projects/networking-top-down-approach/canvas/switch.canvas",
+                "viewState": {
+                  "x": 220.5,
+                  "y": 561.5,
+                  "zoom": -0.9171339628625834
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "switch"
+            }
+          },
+          {
+            "id": "d35fa296f69008df",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "projects/networking-top-down-approach/canvas/switch.canvas",
+                "viewState": {
+                  "x": 928.6933644425267,
+                  "y": 341.13589691198246,
+                  "zoom": -0.08466427470710489
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "switch"
+            }
+          },
+          {
+            "id": "29b3c5fb0fef26ac",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "projects/networking-top-down-approach/canvas/network-types.canvas",
+                "viewState": {
+                  "x": 177.98981852434426,
+                  "y": -126.77983100845556,
+                  "zoom": -1.054579194585453
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "network-types"
+            }
+          },
+          {
+            "id": "aad8748e95e18355",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "projects/networking-top-down-approach/canvas/internet-service-provider.canvas",
+                "viewState": {
+                  "x": -992.3710825183111,
+                  "y": -21.775696600409912,
+                  "zoom": -0.8198453717430427
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "internet-service-provider"
+            }
+          },
+          {
+            "id": "6961faa0990e0151",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "projects/networking-top-down-approach/canvas/network-types.canvas",
+                "viewState": {
+                  "x": 75.86580281151836,
+                  "y": -154.25810721138535,
+                  "zoom": -0.36753498844305704
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "network-types"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ea2c00ff63e68221",
+    "type": "split",
+    "children": [
+      {
+        "id": "00b40ac073095f9d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "12d4e1af63980ab7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "576f23ebfe8b59b5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "2a3a0c5224257c19",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "93972e9fbece164d",
+    "type": "split",
+    "children": [
+      {
+        "id": "d9c2612a9294b23f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1d79c69a184e06f3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "4fb5728cec0c3d5e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "49217758bab1dfe8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b5a90f947d32dff9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "c6a2261364d40712",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "5074378c355bc0a4",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "5779d222c972df5b",
+  "lastOpenFiles": [
+    "projects/networking-top-down-approach/canvas/internet.canvas",
+    "projects/work-with-terminal/bash/bash.canvas",
+    "projects/work-with-terminal/utilities.canvas",
+    "projects/networking-top-down-approach/Глава 1/Ответы и решения/Глава 1 - Вопросы и упражнения.pdf",
+    "projects/work-with-terminal/bash",
+    "projects/work-with-terminal",
+    "projects/networking-top-down-approach/applets/transmission-vs-propagation/LineSimApplet.html",
+    "projects/networking-top-down-approach/applets/transmission-vs-propagation/linesim/Packet.class",
+    "projects/networking-top-down-approach/applets/transmission-vs-propagation/linesim/Line.class",
+    "projects/networking-top-down-approach/applets/transmission-vs-propagation/linesim/LineSimApplet.class",
+    "projects/networking-top-down-approach/applets/transmission-vs-propagation/linesim/LineSimApplet$TickTask.class",
+    "projects/networking-top-down-approach/applets/transmission-vs-propagation/linesim/LineSimApplet$MyChoice.class",
+    "projects/networking-top-down-approach/applets/transmission-vs-propagation/linesim/LineSimApplet$2.class",
+    "projects/networking-top-down-approach/canvas/switch.canvas",
+    "projects/networking-top-down-approach/canvas/network-types.canvas",
+    "projects/networking-top-down-approach/canvas/internet-service-provider.canvas",
+    "projects/networking-top-down-approach/canvas/assets/vzaimodeistvie-setei.png",
+    "Pasted image 20261014141255.png",
+    "projects/networking-top-down-approach/canvas/protocols.canvas",
+    "Untitled 1.md",
+    "Untitled.md",
+    "Welcome.md"
+  ]
+}
