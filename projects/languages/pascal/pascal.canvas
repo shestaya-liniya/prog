@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"dcac44692b04d788","x":-169,"y":-150,"width":250,"height":60,"type":"text","text":"# PASCAL"},
+		{"id":"8a51ca1253c1afeb","x":-120,"y":40,"width":250,"height":60,"type":"text","text":"# Data types"},
+		{"id":"e8fe83f4710d6818","x":-245,"y":260,"width":250,"height":60,"type":"text","text":"# Character"},
+		{"id":"ce21dc04e4b2aefe","x":-336,"y":536,"width":466,"height":404,"type":"text","text":"# READ and WRITE\nRead and write one character from/to a file\nAfter each read operation, the index is moving forward\n\n``` pascal\n{ INPUT = 'ABC' }\nVAR\n\tCh: CHAR;\nWHILE NOT EOLN(INPUT)\nDO\n\tBEGIN\n\t\tREAD(INPUT, Ch);\n\t\tWRITE(Ch); \n\tEND;\n{ OUTPUT = 'ABC' }\n```"}
+	],
+	"edges":[
+		{"id":"3690b81ce16baab4","fromNode":"dcac44692b04d788","fromSide":"bottom","toNode":"8a51ca1253c1afeb","toSide":"top"},
+		{"id":"634171e640d2f65b","fromNode":"8a51ca1253c1afeb","fromSide":"bottom","toNode":"e8fe83f4710d6818","toSide":"top"},
+		{"id":"40b54db4df97f8df","fromNode":"e8fe83f4710d6818","fromSide":"bottom","toNode":"ce21dc04e4b2aefe","toSide":"top"}
+	]
+}
