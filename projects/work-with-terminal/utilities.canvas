@@ -1,13 +1,15 @@
 {
 	"nodes":[
-		{"id":"55c021394023523d","x":-460,"y":-80,"width":250,"height":60,"type":"text","text":"# Text"},
-		{"id":"1cbbc2e99650ddde","x":-600,"y":160,"width":250,"height":120,"type":"text","text":"# awk\nText processing language"},
-		{"id":"487a616ac1bf6ecf","x":-335,"y":-280,"width":250,"height":60,"type":"text","text":"# UTILITIES"},
-		{"id":"31e32b4b38a24235","x":-260,"y":190,"width":250,"height":60,"type":"text","text":"# sed"}
+		{"id":"55c021394023523d","type":"text","text":"# Text","x":-460,"y":-80,"width":250,"height":60},
+		{"id":"487a616ac1bf6ecf","type":"text","text":"# UTILITIES","x":-335,"y":-280,"width":250,"height":60},
+		{"id":"31e32b4b38a24235","type":"text","text":"# sed","x":-260,"y":190,"width":250,"height":60},
+		{"id":"67323c89cca482a7","type":"text","text":"# crontab\n\nSchedule commands to execute, in 2 days, every hour, or every sunday","x":-60,"y":-620,"width":280,"height":170},
+		{"id":"1cbbc2e99650ddde","type":"text","text":"# awk\nText processing language\nReads a file per line, divide the line by column accesible by calling vars $1, $2, $3 etc.\n\n``` bash\nawk '<pattern> {<action>;<action>;...}'\n```\n\n## Arrays\n``` bash \n# Arrays are created automatically, where you are\n# asked to place an array, just place the name you want\n# to assign to it\n\nBEGIN {\n\t# no array initialisation\n    a[1] = 42\n    a[2] = 99\n\n    print a[1] # 42\n}\n```\n\n``` bash\n# Calling a function 'split', which needs an array,\n# we just pass 'a' and it will create it automatically\nawk '{split($1, a, \"/\"); print(a[1])}' ./file\n```\n\n\n\n","x":-1140,"y":120,"width":640,"height":740}
 	],
 	"edges":[
 		{"id":"346bd7bbcdf5eed9","fromNode":"487a616ac1bf6ecf","fromSide":"bottom","toNode":"55c021394023523d","toSide":"top"},
 		{"id":"a2d3ef5aad7de80f","fromNode":"55c021394023523d","fromSide":"bottom","toNode":"1cbbc2e99650ddde","toSide":"top"},
-		{"id":"39149a663fe9b0cb","fromNode":"55c021394023523d","fromSide":"bottom","toNode":"31e32b4b38a24235","toSide":"top"}
+		{"id":"39149a663fe9b0cb","fromNode":"55c021394023523d","fromSide":"bottom","toNode":"31e32b4b38a24235","toSide":"top"},
+		{"id":"59119faa0b302aa6","fromNode":"487a616ac1bf6ecf","fromSide":"top","toNode":"67323c89cca482a7","toSide":"bottom"}
 	]
 }
