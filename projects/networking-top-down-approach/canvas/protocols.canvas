@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"304d2d43a475ef3d","type":"text","text":"# TCP\nTransmission Control Protocol","x":-480,"y":-120,"width":250,"height":165},
+		{"id":"0df129071ad574f0","type":"text","text":"# IP\nInternet Protocol\n\nSet the format of package","x":-480,"y":67,"width":250,"height":163},
+		{"id":"0354389f0c7b9a1a","type":"text","text":"# SMTP","x":-480,"y":290,"width":250,"height":60},
+		{"id":"4ab3303e778f1cd5","type":"text","text":"# Protocol\nRules of communication\n\nDefines the format and the order of messages, exchanged by 2 or more connected objects, and the actions they should perform while recieveing and transmitting messages or while another event.","x":-20,"y":-17,"width":260,"height":331}
+	],
+	"edges":[
+		{"id":"b682183e342d1848","fromNode":"4ab3303e778f1cd5","fromSide":"left","toNode":"304d2d43a475ef3d","toSide":"right"},
+		{"id":"138a7a8478102bbe","fromNode":"4ab3303e778f1cd5","fromSide":"left","toNode":"0df129071ad574f0","toSide":"right"},
+		{"id":"e38aee898a4710d1","fromNode":"4ab3303e778f1cd5","fromSide":"left","toNode":"0354389f0c7b9a1a","toSide":"right"}
+	]
+}

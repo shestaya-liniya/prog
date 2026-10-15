@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"9062de896fa361b4","type":"text","text":"# DSL\n(абонентская цифровая ли-\nния)\nDigital Subscriber Line\n\nThe phone line provider company also provide the internet, so the internet connection pass through the existant phone lines","x":-14,"y":-216,"width":250,"height":297},
+		{"id":"379c28f4ca348556","type":"text","text":"# FTTH\nFiber To The Home","x":-14,"y":-376,"width":250,"height":100},
+		{"id":"365f9a99098a9679","type":"text","text":"# PON\nPassive Optical Networks","x":306,"y":-456,"width":250,"height":100},
+		{"id":"dee41e2a87ba78ee","type":"text","text":"# AON\nActive Optical Networks","x":306,"y":-276,"width":250,"height":100},
+		{"id":"3817dfb0ab36af2a","type":"text","text":"# Wireless\n3G, 4G, 5G\nLTE - Long Time Evolution","x":-139,"y":-616,"width":250,"height":142},
+		{"id":"2de7dae774acc81c","type":"text","text":"# Connection technologies","x":-690,"y":-95,"width":335,"height":56},
+		{"id":"90366bcdaa510b57","type":"text","text":"# ISP\nInternet Service Provider","x":-1120,"y":-144,"width":210,"height":154},
+		{"id":"3a78b88bfa188ef9","type":"text","text":"# POP\nPoints of Presence\n\nGroup of routers located in the same place in the network of provider, that are connected to the customer networks","x":-1294,"y":160,"width":250,"height":240},
+		{"id":"8b25d9cf3f657091","type":"text","text":"# IXP\nInternet Exchange Points","x":-940,"y":154,"width":250,"height":113},
+		{"id":"548239014f6aaf26","type":"text","text":"# Cable or HFC\nHybrid Fiber-Coaxial\n\nThe wire access to the internet pass through the existant TV connection lines\n\nMultiple homes are connected to the same segment of a cable, because of that the speed of transfer can slow down on high load","x":56,"y":160,"width":250,"height":340},
+		{"id":"72ec4ad03c69c00e","type":"text","text":"# Satellite","x":-139,"y":540,"width":250,"height":88},
+		{"id":"7c4e480db5de0879","type":"file","file":"projects/networking-top-down-approach/canvas/assets/vzaimodeistvie-setei.png","x":-2120,"y":-231,"width":667,"height":328}
+	],
+	"edges":[
+		{"id":"58b11edfe8a48cfd","fromNode":"2de7dae774acc81c","fromSide":"right","toNode":"9062de896fa361b4","toSide":"left","label":"Phone"},
+		{"id":"57b8efee29ddd3b2","fromNode":"2de7dae774acc81c","fromSide":"right","toNode":"548239014f6aaf26","toSide":"left","label":"Cable (TV)"},
+		{"id":"64814896a9761dec","fromNode":"2de7dae774acc81c","fromSide":"right","toNode":"379c28f4ca348556","toSide":"left","label":"Fiber"},
+		{"id":"eab568a5d22d4c97","fromNode":"2de7dae774acc81c","fromSide":"right","toNode":"72ec4ad03c69c00e","toSide":"left"},
+		{"id":"e55a51e3ed15bfca","fromNode":"2de7dae774acc81c","fromSide":"right","toNode":"3817dfb0ab36af2a","toSide":"left"},
+		{"id":"c96f7f88a1e6ffb8","fromNode":"379c28f4ca348556","fromSide":"right","toNode":"365f9a99098a9679","toSide":"left"},
+		{"id":"0c3152844f8df571","fromNode":"379c28f4ca348556","fromSide":"right","toNode":"dee41e2a87ba78ee","toSide":"left"},
+		{"id":"f0ab2e194851ba0a","fromNode":"90366bcdaa510b57","fromSide":"right","toNode":"2de7dae774acc81c","toSide":"left"},
+		{"id":"bb6cafa0640777a7","fromNode":"90366bcdaa510b57","fromSide":"bottom","toNode":"3a78b88bfa188ef9","toSide":"top"},
+		{"id":"f79eeb332fe8beb4","fromNode":"90366bcdaa510b57","fromSide":"bottom","toNode":"8b25d9cf3f657091","toSide":"top"},
+		{"id":"fee98d59546425df","fromNode":"90366bcdaa510b57","fromSide":"left","toNode":"7c4e480db5de0879","toSide":"right"}
+	]
+}

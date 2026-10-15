@@ -1,0 +1,34 @@
+{
+	"nodes":[
+		{"id":"b2351d2fc353e3f1","type":"text","text":"# Network\n\nSystem of data transfer, major parts: switch, connection line\n\nThe unite of transfered information is packet","x":-683,"y":-136,"width":255,"height":217},
+		{"id":"39d90c6f00a2c655","type":"text","text":"# INTERNET\nInternet is a world wide computer network, interconnects smaller networks, a network of networks\n\nConnected destination systems ","x":-720,"y":-498,"width":329,"height":196},
+		{"id":"08aa8c85614d109c","type":"text","text":"# Switch \n(коммутатор пакетов)\n\nRecieves a package by one of communication line and dispatch it to the next destination\n\nPart of network route\n\nTypes: router, L2 switch","x":-1110,"y":380,"width":306,"height":330},
+		{"id":"e331c7cff51b0341","type":"text","text":"# Packet\nA portion of information","x":-678,"y":335,"width":250,"height":90},
+		{"id":"9d93cb2e1ffa3f76","type":"file","file":"projects/networking-top-down-approach/canvas/protocols.canvas","x":-1815,"y":-498,"width":220,"height":200},
+		{"id":"0871e7fe3a4fe401","type":"text","text":"# Internet Standards\nWorld Wide Web should work universally on every node, in every country, in every city\n\nCollection of IETF (Internet Engineering Task Force) standards.\n\nRFC (request for comment) has appeared while the developing of internet, contains general solutions for appearing problems\nmore than 6000 documents/specifications","x":-1260,"y":-567,"width":375,"height":335},
+		{"id":"38235666c4d98605","type":"text","text":"# Connection line\nConductor, wire","x":-200,"y":488,"width":250,"height":115},
+		{"id":"6fcd0045ecd7627f","type":"text","text":"# Network route\nSequence of lines of communication and package switches","x":-706,"y":483,"width":306,"height":125},
+		{"id":"99c0afd15bf67bbf","type":"text","text":"# Speed of transfer \n(bit/s)","x":-678,"y":710,"width":250,"height":90},
+		{"id":"2e435459481ece60","type":"text","text":"# Distributed applications\nInternet applications are executed on destination systems (browser for client, web server for server) and not on switches.","x":150,"y":-498,"width":210,"height":266},
+		{"id":"b06fedfa4b62dd7b","type":"text","text":"# API\nApplication Programming Layer\n\nDefines how the program on host will interact with the internet to send the data to another specific host   ","x":480,"y":-498,"width":250,"height":259},
+		{"id":"48bec72e3486673e","type":"file","file":"projects/networking-top-down-approach/canvas/network-types.canvas","x":50,"y":-118,"width":225,"height":181},
+		{"id":"b213247d4014548e","type":"file","file":"projects/networking-top-down-approach/canvas/switch.canvas","x":-1620,"y":438,"width":220,"height":215},
+		{"id":"aef2da492b20e1d5","type":"text","text":"# Infrastructure","x":-260,"y":-440,"width":220,"height":80}
+	],
+	"edges":[
+		{"id":"07d7e1e2ca2e0f44","fromNode":"39d90c6f00a2c655","fromSide":"bottom","toNode":"b2351d2fc353e3f1","toSide":"top"},
+		{"id":"2e0d00a2951614b2","fromNode":"b2351d2fc353e3f1","fromSide":"bottom","toNode":"08aa8c85614d109c","toSide":"top"},
+		{"id":"fcaf93783fe5a990","fromNode":"b2351d2fc353e3f1","fromSide":"bottom","toNode":"38235666c4d98605","toSide":"top"},
+		{"id":"cc6f3b2da83b8b5c","fromNode":"6fcd0045ecd7627f","fromSide":"right","toNode":"38235666c4d98605","toSide":"left","toEnd":"none"},
+		{"id":"2de552ffbbc7f78a","fromNode":"6fcd0045ecd7627f","fromSide":"left","toNode":"08aa8c85614d109c","toSide":"right","toEnd":"none"},
+		{"id":"96c718416ce8f568","fromNode":"6fcd0045ecd7627f","fromSide":"bottom","toNode":"99c0afd15bf67bbf","toSide":"top"},
+		{"id":"36c784ff9e33f9f9","fromNode":"b2351d2fc353e3f1","fromSide":"bottom","toNode":"e331c7cff51b0341","toSide":"top"},
+		{"id":"403419ab77dd33af","fromNode":"b2351d2fc353e3f1","fromSide":"right","toNode":"48bec72e3486673e","toSide":"left","label":"Network types and hardware"},
+		{"id":"2adeefaf163c3ec1","fromNode":"0871e7fe3a4fe401","fromSide":"left","toNode":"9d93cb2e1ffa3f76","toSide":"right","label":"Protocols"},
+		{"id":"eee032e19361f8c9","fromNode":"39d90c6f00a2c655","fromSide":"left","toNode":"0871e7fe3a4fe401","toSide":"right"},
+		{"id":"a78b76594ff37328","fromNode":"39d90c6f00a2c655","fromSide":"right","toNode":"aef2da492b20e1d5","toSide":"left"},
+		{"id":"99a1d6614d46e90e","fromNode":"aef2da492b20e1d5","fromSide":"right","toNode":"2e435459481ece60","toSide":"left"},
+		{"id":"37133d857060f9d6","fromNode":"2e435459481ece60","fromSide":"right","toNode":"b06fedfa4b62dd7b","toSide":"left"},
+		{"id":"b61b3fe92317cf15","fromNode":"08aa8c85614d109c","fromSide":"left","toNode":"b213247d4014548e","toSide":"right","label":"Switch in details"}
+	]
+}

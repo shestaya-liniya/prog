@@ -1,0 +1,31 @@
+{
+	"nodes":[
+		{"id":"adf88bc7e0cc3647","type":"text","text":"# Switch","x":-342,"y":-23,"width":120,"height":50},
+		{"id":"68c0282b08d3639a","type":"text","text":"# Circuit switchnig\nThe connection between two destination systems must be established before communication\n\nAs the circuit is pre-established, the speed of communication can be guaranteed\n\nReserved circuits when unused, are still have reserved ressources","x":-702,"y":184,"width":250,"height":376},
+		{"id":"5c112e4951cc7513","type":"text","text":"# Packet switching\nPackets are sending separately","x":-60,"y":184,"width":250,"height":156},
+		{"id":"c9ac7841a010ed58","type":"text","text":"# TDM\nTime-Divison Multiplexer\n\nSignals get a schedule, or it's frame\n\n1ms -> send signal A\n2ms -> send signal B\n3ms -> send signal C\n4ms -> send signal A\n...\n\nFrame - a sequence of signals to send\nSlot - a place for a signal in a frame","x":-952,"y":680,"width":250,"height":429},
+		{"id":"d4c3bcd8d7755017","type":"text","text":"# FDM\nFrequency-Divison Multiplexer\n\nThe line divide the frequency channel, giving for each signal it's own frequency\n\nConnection line has a bandwidth (полоса пропускания) of 4kHz\nSignal A runs on frequency 1kHz\nSignal B runs\non frequency 2kHz","x":-407,"y":680,"width":250,"height":429},
+		{"id":"d78c2f2d0698eae1","type":"text","text":"# Latency","x":340,"y":232,"width":140,"height":60},
+		{"id":"c8f9995200f69a23","type":"text","text":"# Processing\nTime the switch will check packet headers and it's next destination\nCheck errors\n\ntime: few µs","x":620,"y":-221,"width":250,"height":223},
+		{"id":"4275fd1d8f93711c","type":"text","text":"# Queue\nWhen a switch has more packets arriving than he can process per a period of time\n\nTime: few µs to few ms","x":620,"y":27,"width":250,"height":204},
+		{"id":"791b6f578b41bb12","type":"text","text":"# Transmission\nTime to push the parts of packet into the line of communication\n\nTime: few µs to few ms","x":620,"y":279,"width":250,"height":201},
+		{"id":"44c4453e04a79881","type":"text","text":"# Propagation\nTime of passing through line of communication\n\nTime: few ms","x":620,"y":514,"width":250,"height":166},
+		{"id":"853c7a53f5db8fea","type":"text","text":"# Store-and-Forward Transmission\nBefore transmission to another destination, the switch is waiting for delivering of all packets, this process is called bufferisation\nP - part of a packet\n\n| Iterations | Destination 1 | ->  | Switch 2   | ->  | Destination 3 |\n| ---------- | ------------- | --- | ---------- | --- | ------------- |\n|            | P1, P2, P3    |     |            |     |               |\n| 1          | P1, P2        |     | P3         |     |               |\n| 2          | P1            |     | P2, P3     |     |               |\n| 3          |               |     | P1, P2, P3 |     |               |\n| 4          |               |     | P1, P2     |     | P3            |\n| 5          |               |     | P1         |     | P2, P3        |\n| 6          |               |     |            |     | P1, P2, P3    |\n\n","x":0,"y":920,"width":620,"height":424},
+		{"id":"e974230b3df492c4","x":1080,"y":-28,"width":313,"height":314,"type":"text","text":"# Intensity of traffic\n$$\nLa/R \n$$\nL - length of a packet\na - number of packets\nR - speed of transmission\n\nIf the intensity of traffic > 1, then the switch receive more packets than he can transmiss to the line of communication "},
+		{"id":"8b1b5fc5086cd058","x":1080,"y":420,"width":250,"height":220,"type":"text","text":"# Packet loss\nIf the buffer zone of a switch is completed, the new arriving packet will thrown away"}
+	],
+	"edges":[
+		{"id":"1958937d944d5edd","fromNode":"adf88bc7e0cc3647","fromSide":"bottom","toNode":"68c0282b08d3639a","toSide":"top","label":"By reservation"},
+		{"id":"8a347fc0d051392c","fromNode":"adf88bc7e0cc3647","fromSide":"bottom","toNode":"5c112e4951cc7513","toSide":"top","label":"On demand"},
+		{"id":"23c3e1c4e4f85529","fromNode":"5c112e4951cc7513","fromSide":"bottom","toNode":"853c7a53f5db8fea","toSide":"top"},
+		{"id":"7c83afa74492b288","fromNode":"68c0282b08d3639a","fromSide":"bottom","toNode":"c9ac7841a010ed58","toSide":"top"},
+		{"id":"86c98b43d95a6d91","fromNode":"68c0282b08d3639a","fromSide":"bottom","toNode":"d4c3bcd8d7755017","toSide":"top"},
+		{"id":"fba29f968801294d","fromNode":"5c112e4951cc7513","fromSide":"right","toNode":"d78c2f2d0698eae1","toSide":"left"},
+		{"id":"c04de3de336c6b93","fromNode":"d78c2f2d0698eae1","fromSide":"right","toNode":"c8f9995200f69a23","toSide":"left"},
+		{"id":"d68c9308a5b631a8","fromNode":"d78c2f2d0698eae1","fromSide":"right","toNode":"4275fd1d8f93711c","toSide":"left"},
+		{"id":"c31b2a488ff9abbf","fromNode":"d78c2f2d0698eae1","fromSide":"right","toNode":"791b6f578b41bb12","toSide":"left"},
+		{"id":"f8eaf77728967674","fromNode":"d78c2f2d0698eae1","fromSide":"right","toNode":"44c4453e04a79881","toSide":"left"},
+		{"id":"27b5b8a86dca468d","fromNode":"4275fd1d8f93711c","fromSide":"right","toNode":"e974230b3df492c4","toSide":"left"},
+		{"id":"6076efd65a62a4bf","fromNode":"4275fd1d8f93711c","fromSide":"right","toNode":"8b1b5fc5086cd058","toSide":"left"}
+	]
+}

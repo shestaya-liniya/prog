@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"da1c3015858127d8","type":"text","text":"# BASH","x":-40,"y":-240,"width":105,"height":60},
+		{"id":"cd9bf1b81f4dde9e","type":"text","text":"# read\nRead first line from STDIN\n``` bash\nread -p -r\n```\n","x":200,"y":-270,"width":360,"height":190}
+	],
+	"edges":[
+		{"id":"e4ca6dc9d816f9f2","fromNode":"da1c3015858127d8","fromSide":"right","toNode":"cd9bf1b81f4dde9e","toSide":"left"}
+	]
+}

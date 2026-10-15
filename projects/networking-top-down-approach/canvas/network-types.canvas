@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"a98a3b04d91d5f07","type":"text","text":"# Access network\nConnects the destination system with the first (or last) router called the \"destination router\"","x":-326,"y":-92,"width":250,"height":181},
+		{"id":"fd9a1c252be115de","type":"text","text":"# Core network\nPart of network which connects other networks\n\nConnects ISP with access networks","x":-326,"y":-396,"width":250,"height":224},
+		{"id":"555fc228e5aaa794","type":"text","text":"# Hosts or destination systems","x":-356,"y":160,"width":310,"height":100},
+		{"id":"3b68ef14786a356e","type":"text","text":"# Broadband Internet Access\n(широкополосное подключение)\nAcces to the internet which allows the transfer of big data and high speed","x":-756,"y":-151,"width":250,"height":240},
+		{"id":"d1c3fedfcb43e356","type":"text","text":"# L2 switch\n(коммутатор канального уровня)\n","x":85,"y":74,"width":250,"height":144},
+		{"id":"c3b205bbace5bd49","type":"text","text":"# LAN\nLocal  Area Network","x":430,"y":107,"width":250,"height":103},
+		{"id":"a3c0fb84ee766a4c","type":"text","text":"# WiFi","x":745,"y":44,"width":250,"height":60},
+		{"id":"ba450d3ff4ff3690","type":"text","text":"# Ethernet","x":745,"y":260,"width":250,"height":60},
+		{"id":"155844554c7c396c","type":"text","text":"# Router\n(маршрутизатор)\n","x":85,"y":-218,"width":294,"height":135},
+		{"id":"69f17860d10dab0d","x":307,"y":-560,"width":248,"height":164,"type":"file","file":"projects/networking-top-down-approach/canvas/internet-service-provider.canvas"}
+	],
+	"edges":[
+		{"id":"e9f6196d50d2f426","fromNode":"a98a3b04d91d5f07","fromSide":"right","toNode":"d1c3fedfcb43e356","toSide":"left","toEnd":"none"},
+		{"id":"5f11112aa29fae9a","fromNode":"fd9a1c252be115de","fromSide":"bottom","toNode":"a98a3b04d91d5f07","toSide":"top"},
+		{"id":"e1d0f2493fc69939","fromNode":"fd9a1c252be115de","fromSide":"right","toNode":"155844554c7c396c","toSide":"left","toEnd":"none"},
+		{"id":"33a7b9b03cd73925","fromNode":"a98a3b04d91d5f07","fromSide":"bottom","toNode":"555fc228e5aaa794","toSide":"top"},
+		{"id":"d17934bbc57df0e7","fromNode":"d1c3fedfcb43e356","fromSide":"right","toNode":"c3b205bbace5bd49","toSide":"left"},
+		{"id":"cf292c4a98bf8a5b","fromNode":"c3b205bbace5bd49","fromSide":"right","toNode":"a3c0fb84ee766a4c","toSide":"left"},
+		{"id":"ce63fb13ba10c40b","fromNode":"c3b205bbace5bd49","fromSide":"right","toNode":"ba450d3ff4ff3690","toSide":"left"},
+		{"id":"0fd48e166822ef57","fromNode":"fd9a1c252be115de","fromSide":"right","toNode":"69f17860d10dab0d","toSide":"left","label":"Internet service provider"}
+	]
+}
