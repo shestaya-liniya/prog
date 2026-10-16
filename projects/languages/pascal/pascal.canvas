@@ -2,11 +2,13 @@
 	"nodes":[
 		{"id":"8a51ca1253c1afeb","x":-120,"y":40,"width":250,"height":60,"type":"text","text":"# Data types"},
 		{"id":"1c9639c1e35c0b52","x":320,"y":260,"width":400,"height":460,"type":"text","text":"# File (TEXT)\nEssential operations\n``` pascal\nVAR \n\tF1: TEXT;\n{Reset the index in file,\nprepare for read}\nRESET(F1); \n\n{Delete all text from F1, prepare to write}\nREWRITE(F1); \n\n{Assign F1 to existant file by its name, the file should locate in the same dir that is the script}\nASSIGN(F1, 'name_of_file');\n```"},
-		{"id":"dcac44692b04d788","x":-120,"y":-160,"width":160,"height":60,"type":"text","text":"# PASCAL"},
+		{"id":"dcac44692b04d788","x":-120,"y":-160,"width":140,"height":60,"type":"text","text":"# PASCAL"},
 		{"id":"dce98623655e251c","x":320,"y":-420,"width":280,"height":400,"type":"text","text":"# Conditions\n``` pascal\nIF <condition>\nTHEN\n\tBEGIN\n\t\t<body>\n\tEND\n<ELSE IF\n\tBEGIN\n\tEND\n>\n<ELSE\n\tBEGIN\n\tEND\n>\n```"},
 		{"id":"ce21dc04e4b2aefe","x":-580,"y":440,"width":620,"height":944,"type":"text","text":"# READ and WRITE\nRead and write one character from/to a file\nRead operation set the value at current index in character variable, then move the index forward\nWrite operation do write a character into the current index, then move the index forward\n\n``` pascal\n{ INPUT = 'ABC' }\nVAR\n\tCh: CHAR;\nWHILE NOT EOLN(INPUT)\nDO\n\tBEGIN\n\t\tREAD(INPUT, Ch);\n\t\tWRITE(OUTPUT, Ch); \n\tEND;\n{ OUTPUT = 'ABC' }\n```\n\n## Table of execution\n{A} - index is pointing at the symbol 'A'\n\n|                       | INPUT  | OUTPUT | Ch  | EOLN |\n| --------------------- | ------ | ------ | --- | ---- |\n| WHILE NOT EOLN(INPUT) | {A}BC/ |        | ?   | F    |\n| READ(INPUT, Ch);      | A{B}C/ |        | A   |      |\n| WRITE(OUTPUT, Ch);    |        | A      |     |      |\n| WHILE NOT EOLN(INPUT) |        |        |     | F    |\n| READ(INPUT, Ch);      | AB{C}/ |        | B   |      |\n| WRITE(OUTPUT, Ch);    |        | AB     |     |      |\n| WHILE NOT EOLN(INPUT) |        |        |     | F    |\n| READ(INPUT, Ch);      | ABC{/} |        |     |      |\n| WRITE(OUTPUT, Ch);    |        | ABC    |     |      |\n| WHILE NOT EOLN(INPUT) |        |        |     | Y    |\n\n\n"},
 		{"id":"e8fe83f4710d6818","x":-290,"y":200,"width":250,"height":60,"type":"text","text":"# Character"},
-		{"id":"7871ae4811fd1e7c","x":880,"y":340,"width":280,"height":300,"type":"text","text":"# File markers\nEOLN - end of line, situation when the index is pointing at the symbol of the end of line\n`EOLN(F1) {T of F}`\n\nEOF - end of file,  situation when the index is pointing at the symbol of the end of file\n`EOF(F1) {T of F}`"}
+		{"id":"7871ae4811fd1e7c","x":880,"y":340,"width":280,"height":300,"type":"text","text":"# File markers\nEOLN - end of line, situation when the index is pointing at the symbol of the end of line\n`EOLN(F1) {T of F}`\n\nEOF - end of file,  situation when the index is pointing at the symbol of the end of file\n`EOF(F1) {T of F}`"},
+		{"id":"4ddb2b29cd346ba1","x":-320,"y":-820,"width":250,"height":300,"type":"text","text":"# While\n``` pascal\nREAD(Ch);\nWHILE Ch <> '#'\nDO\n\tBEGIN\n\t\tWRITE(Ch);\n\t\tREAD(Ch)\n\tEND\n```"},
+		{"id":"7ba8e684e271115b","x":-195,"y":-380,"width":250,"height":60,"type":"text","text":"# Loops"}
 	],
 	"edges":[
 		{"id":"3690b81ce16baab4","fromNode":"dcac44692b04d788","fromSide":"bottom","toNode":"8a51ca1253c1afeb","toSide":"top"},
@@ -14,6 +16,8 @@
 		{"id":"40b54db4df97f8df","fromNode":"e8fe83f4710d6818","fromSide":"bottom","toNode":"ce21dc04e4b2aefe","toSide":"top"},
 		{"id":"be2b3a78cf212c69","fromNode":"8a51ca1253c1afeb","fromSide":"right","toNode":"1c9639c1e35c0b52","toSide":"top"},
 		{"id":"cbdd1d9d8dd3cde6","fromNode":"1c9639c1e35c0b52","fromSide":"right","toNode":"7871ae4811fd1e7c","toSide":"left"},
-		{"id":"90ba4bc86581ef1f","fromNode":"dcac44692b04d788","fromSide":"right","toNode":"dce98623655e251c","toSide":"left"}
+		{"id":"90ba4bc86581ef1f","fromNode":"dcac44692b04d788","fromSide":"right","toNode":"dce98623655e251c","toSide":"left"},
+		{"id":"fb67dc5b1cfd8c7b","fromNode":"dcac44692b04d788","fromSide":"top","toNode":"7ba8e684e271115b","toSide":"bottom"},
+		{"id":"975f84199da81226","fromNode":"7ba8e684e271115b","fromSide":"top","toNode":"4ddb2b29cd346ba1","toSide":"bottom"}
 	]
 }
