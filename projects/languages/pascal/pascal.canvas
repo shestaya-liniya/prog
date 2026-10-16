@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"8a51ca1253c1afeb","x":-120,"y":40,"width":250,"height":60,"type":"text","text":"# Data types"},
+		{"id":"8a51ca1253c1afeb","x":-120,"y":40,"width":175,"height":60,"type":"text","text":"# Data types"},
 		{"id":"1c9639c1e35c0b52","x":320,"y":260,"width":400,"height":460,"type":"text","text":"# File (TEXT)\nEssential operations\n``` pascal\nVAR \n\tF1: TEXT;\n{Reset the index in file,\nprepare for read}\nRESET(F1); \n\n{Delete all text from F1, prepare to write}\nREWRITE(F1); \n\n{Assign F1 to existant file by its name, the file should locate in the same dir that is the script}\nASSIGN(F1, 'name_of_file');\n```"},
 		{"id":"dcac44692b04d788","x":-120,"y":-160,"width":140,"height":60,"type":"text","text":"# PASCAL"},
 		{"id":"dce98623655e251c","x":320,"y":-420,"width":280,"height":400,"type":"text","text":"# Conditions\n``` pascal\nIF <condition>\nTHEN\n\tBEGIN\n\t\t<body>\n\tEND\n<ELSE IF\n\tBEGIN\n\tEND\n>\n<ELSE\n\tBEGIN\n\tEND\n>\n```"},
